@@ -10,6 +10,7 @@
 <body>
 	<h1>hello.jsp</h1>
 	currentTime : <%=new Date() %>
+	데헿 지금 시간 10시 3분
 
 </body>
 </html>
