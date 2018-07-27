@@ -19,12 +19,21 @@
 			</plugin>
 		</plugins>
 	</build>
-
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<!-- 톰캣이 실행될때 lib폴더에서 제공을 해준다. 컴파일 할때만 필요한 거고 배포할때는 필요가 없다 .
+		maven이 provide때문에 안해준다.  -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope><!-- 실행될때 제공된다.  -->
+		</dependency>
+
 	</dependencies>
 </project>
